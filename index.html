@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <title>Tamagotchi Mini Project</title>
-</head>
+</head> 
+<h1 class = "main-title">Tamagotchi</h1> 
 <body>
-    
+    <div>
+        <label for="hunger">Hunger</label>
+        <progress id="status" class= "hunger" value = "8" max = "10" ></progress>
+        <label for="energy">Energy</label>
+        <progress id="status" class= "energy" value = "10" max = "10" ></progress>
+        <label for="boredom">Boredom</label>
+        <progress id="status" class= "boredom" value = "2" max = "10" ></progress>
+    </div>
+
+    <button class= "Instruction"> ? </button>
+    <div class = "instructions-page">
+        <p>Welcome to the world of Tamagotchi!! </p> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, laborum, atque rerum molestias totam minima corrupti aspernatur esse quia rem fuga illo quis at! Tenetur similique perferendis odit itaque quae.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod accusantium harum excepturi voluptas, expedita recusandae facilis! Vero aperiam, odio itaque ipsam nostrum laboriosam ratione dolorum perspiciatis minus quidem, provident nam.</p>
+    </div>
+
+
+<hr>
+    <div class="actions">
+        <button class= "hungry"> Eat </button>
+        <button class= "sleepy"> Sleep </button>
+        <button class= "bored"> Play </button>
+</div>
+
 </body>
 </html>

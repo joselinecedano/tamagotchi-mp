@@ -1,3 +1,9 @@
 body{
     background-color: tan;
+    font-family: 'Fredoka One', cursive;
+}
+.main-title{
+    font-size: 70px;
+    text-align: center;
+    margin: 0;
 }
