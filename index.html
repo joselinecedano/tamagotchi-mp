@@ -13,29 +13,31 @@
 </head> 
 <h1 class = "main-title">Tamagotchi</h1> 
 <body>
-    <div>
+    <div class ="stats">
         <label for="hunger">Hunger</label>
-        <progress id="status" class= "hunger" value = "8" max = "10" ></progress>
+        <progress id= "hunger" value = "100" max = "100" ></progress>
         <label for="energy">Energy</label>
-        <progress id="status" class= "energy" value = "10" max = "10" ></progress>
+        <progress id= "energy" value = "100" max = "100" ></progress>
         <label for="boredom">Boredom</label>
-        <progress id="status" class= "boredom" value = "2" max = "10" ></progress>
+        <progress id= "boredom" value = "0" max = "100" ></progress>
     </div>
-
-    <button class= "Instruction"> ? </button>
-    <div class = "instructions-page">
-        <p>Welcome to the world of Tamagotchi!! </p> 
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, laborum, atque rerum molestias totam minima corrupti aspernatur esse quia rem fuga illo quis at! Tenetur similique perferendis odit itaque quae.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod accusantium harum excepturi voluptas, expedita recusandae facilis! Vero aperiam, odio itaque ipsam nostrum laboriosam ratione dolorum perspiciatis minus quidem, provident nam.</p>
-    </div>
-
-
-<hr>
-    <div class="actions">
-        <button class= "hungry"> Eat </button>
-        <button class= "sleepy"> Sleep </button>
-        <button class= "bored"> Play </button>
+<div class="game-area">
+    <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid perferendis recusandae magnam voluptate sunt quo est nulla provident ut quisquam. Libero saepe pariatur est mollitia numquam odit tempora, voluptate exercitationem!
+</p>
 </div>
-
+<hr>
+<div class= "action-btns">
+    <button class= "hungry"> Eat </button>
+    <button class= "sleepy"> Sleep </button>
+    <button class= "bored"> Play </button>
+</div>  
+<button class= "open-instruction"> ? </button>
+    <div class = "info-popup">
+            <p>Welcome to the world of Tamagotchi!! </p> 
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, laborum, atque rerum molestias totam minima corrupti aspernatur esse quia rem fuga illo quis at! Tenetur similique perferendis odit itaque quae.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod accusantium harum excepturi voluptas, expedita recusandae facilis! Vero aperiam, odio itaque ipsam nostrum laboriosam ratione dolorum perspiciatis minus quidem, provident nam.</p>
+            <button class="close-instructions"> Close </button>
+</div>
 </body>
 </html>
