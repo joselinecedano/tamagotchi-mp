@@ -1,5 +1,5 @@
 body{
-    background-color: tan;
+    background-color:tan;
     font-family: 'Fredoka One', cursive;
     max-width: 800px;
 }
@@ -8,8 +8,8 @@ body{
     text-align: center;
     margin: 0;
     color:white;
-    text-shadow: 4px 4px 4px
-    darkgray;
+    text-shadow: 4px 6px 4px
+    #878787;
 }
 .stats{
     color: white;
@@ -19,10 +19,29 @@ body{
 }
 progress{
     accent-color: green;
+    font-size: 15px;
+    position:relative; top: 20px;
 }
-.game-area{
+.tamagotchiName{
+    position: relative; top: 40px;left: 10px;
+    font-size: 30px;
+    color:white;
+    text-shadow: 4px 4px 4px
+    gray;
+
+}
+.lightMode{
     padding: 200px;
-    background-color: red;
+    background-image: url("https://cdn.pixabay.com/photo/2022/07/27/19/17/video-game-7348585_1280.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 800px;
+    border: 2px solid white;
+}
+.darkMode{
+    padding: 200px;
+    background-color: black;
+    color:white;
 }
 .info-popup{
     visibility: hidden;
@@ -31,7 +50,7 @@ progress{
     background: linear-gradient(145deg, #ffffff, #e6e6e6);
     box-shadow: 7px 7px 0px #878787,
     0px 0px 3px #ffffff;
-    position: relative;top:-700px
+    position: relative;top:-700px; left:-5px;
 }
 .hungry, .sleepy, .bored{
     cursor: pointer;
@@ -44,7 +63,6 @@ progress{
     margin: 80px;
     padding: 20px;
     position: relative;top: -70px;
-
 }
 .open-instruction{
     cursor: pointer;
@@ -62,6 +80,17 @@ progress{
     padding: 10px;
     border: none;
     box-shadow: inherit;
+}
+.resetBtn{
+    position: relative; top:-1080px; left:660px;
+    padding: 10px 40px;
+    border-radius: 80px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 4px 4px 0px #878787,
+    0px 0px 5px #ffffff;
+    cursor: pointer;
 }
 button:hover{
     background-color: lightgray;
