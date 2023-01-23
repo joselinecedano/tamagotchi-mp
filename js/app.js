@@ -22,15 +22,63 @@ console.log(infoBtn)
 const closeInfo = document.querySelector(".close-instructions")
 console.log(closeInfo)
 
-// startGame(){
-    //this will trigger the game to play and make all the buttons work
-//     //code here
-// }
-
 //set up prompt for user to input their tama name and update it inside of the game!
 const tamaName = prompt ("Welcome to the world of Tamagotchi! What would you like to name your new friend?","")
 document.querySelector(".tamagotchiName").innerHTML= tamaName;
 
- 
+//open info button
+function openInfo() {
+    document.getElementById("info-popup").style.visibility = "visible"
+}
+infoBtn.addEventListener("click", openInfo)
 
+//close popup info page
+const closePopup = () => {
+    document.getElementById('info-popup').style.visibility = "hidden";
+}
+closeInfo.addEventListener("click", closePopup)
+
+
+
+//allow player to feed their tamagotchi, play with their tamagotchu, and make their tamagotchi sleep
+// Hunger -10  Energy -5  Boredom +5 //For Feed action
+// Energy +10 Hunger +10 Boredom -5 //Sleep action
+// Bordemon -10 Hunger +15 Energy -15 //Play actio 
+
+//feed tamagotchi function
+const feedTama = () => {
+    if(hungerBar.value >= 0){
+    hungerBar.value -=10
+    energyBar.value -= 5
+    boredBar.value += 10
+    }else if (boredBar.value == 100 || energyBar.value == 0){
+        alert(`${tamaName} died1!`)
+    }console.log(hungerBar.value, energyBar.value, boredBar.value)
+}
+eatBtn.addEventListener("click",feedTama)
+
+//put tamagotchi to sleep function
+const sleepyTama = () => {
+if(energyBar.value > 0){
+    energyBar.value +=10
+    hungerBar.value += 10
+    boredBar.value += 5
+    }else if(hungerBar.value = 100){
+        alert(`${tamaName} died2!`)
+    }
+}
+sleepBtn.addEventListener("click", sleepyTama)
+
+//play with tamagotchi function
+const playTama = () => {
+    if (boredBar.value > 0){
+        boredBar.value -=10
+        hungerBar.value += 10
+        energyBar.value -=15
+    console.log(energyBar.value)
+    }else if (energyBar.value = 0){
+        alert(`${tamaName} died3!`)
+    }
+}
+playBtn.addEventListener("click", playTama)
 

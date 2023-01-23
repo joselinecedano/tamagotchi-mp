@@ -43,7 +43,7 @@ progress{
     background-color: black;
     color:white;
 }
-.info-popup{
+#info-popup{
     visibility: hidden;
     padding: 20px;
     border-radius: 41px;
