@@ -22,15 +22,17 @@ progress{
     font-size: 15px;
     position:relative; top: 20px;
 }
-.tamagotchiName{
-    position: relative; top: 40px;left: 10px;
+.tamagotchiName ,.tamagotchiAge{
+    position: relative; top: 85px;left: 10px;
     font-size: 30px;
     color:white;
     text-shadow: 4px 4px 4px
     gray;
-
 }
- /* .first {
+.tamagotchiAge{
+font-size: 20px;
+}
+ .first {
     width: 120px;
 }
 
@@ -40,7 +42,7 @@ progress{
 
 .third{
     width : 190px;
-} */
+}
 
 
 .lightMode{
