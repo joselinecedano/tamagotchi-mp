@@ -30,10 +30,19 @@ progress{
     gray;
 
 }
-.tamagotchi, .first, .second ,.third{
-    background-size: ;
-    
+ /* .first {
+    width: 120px;
 }
+
+.second {
+    width: 140px;
+}
+
+.third{
+    width : 190px;
+} */
+
+
 .lightMode{
     padding: 200px;
     background-image: url("https://64.media.tumblr.com/60721f23d65f6f5cb82c07fefde68713/tumblr_n1dbbe4Ksd1rs0nhyo1_500.gif");
