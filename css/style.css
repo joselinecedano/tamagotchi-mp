@@ -32,25 +32,54 @@ progress{
 .tamagotchiAge{
 font-size: 20px;
 }
- .first {
+
+/* styling the tamagotchi */
+.first {
     width: 120px;
+    text-align: center;
+    position: absolute;
+    display: block; 
+    height: 20%;
+    width: 15%;
+    animation: jump 0.4s ease-in infinite;
+    /* jump every 0.5 seconds infinietly */
 }
-
 .second {
-    width: 140px;
+    width: 140;
+    text-align: center;
+    position: absolute;
+    display: none; 
+    height: 22%;
+    width: 20%;
+    animation: jump 0.6s ease-in infinite;
 }
-
 .third{
-    width : 190px;
+    width: 190px;
+    text-align: center;
+    position: absolute;
+    display: none; 
+    height: 22%;
+    width: 20%;
+    animation: jump 0.7s ease-in infinite;
+
+}
+/* animate the tamagotchi */
+@keyframes jump{
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
 }
 
-
+/* setting the night and day classes */
 .lightMode{
     padding: 200px;
     background-image: url("https://64.media.tumblr.com/60721f23d65f6f5cb82c07fefde68713/tumblr_n1dbbe4Ksd1rs0nhyo1_500.gif");
     background-repeat: no-repeat;
     background-color: white;
-    background-size: 1000px;
+    background-size:cover;
     border: 2px solid white;
 }
 .darkMode{
@@ -58,7 +87,7 @@ font-size: 20px;
     background-image: url("https://cdna.artstation.com/p/assets/images/images/015/690/214/original/daniel-gianino-fairy-forest1.gif?1549276717");
     background-repeat: no-repeat;
     background-color: black;
-    background-size: 1200px;
+    background-size: cover;
     color:white;
 }
 #info-popup{
@@ -100,7 +129,7 @@ font-size: 20px;
     box-shadow: inherit;
 }
 .resetBtn{
-    position: relative; top:-1080px; left:660px;
+    position: relative; top:-950px; left:660px;
     padding: 10px 40px;
     border-radius: 80px;
     font-size: 15px;
