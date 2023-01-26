@@ -72,17 +72,17 @@ class Tamagotchi{
         this.age.innerHTML = parseInt(this.age.innerHTML) + 1;
     }
      changeTamaImg(){
-        //if age is less than 3 set first image to block and others to none so they dont show up with the first one
+        //if age is less than 4 set first image to block and others to none so they dont show up with the first one
         if(this.age.innerHTML < 4){
             this.image1.style.display= "block"
             this.image2.style.display= "none"
             this.image3.style.display= "none"
-            //if tamagotchi is older than 3 but younger than/ equal to 6 change to 2nd pic
+            //if tamagotchi is older than 5 but younger than/ equal to 8 change to 2nd pic
         }else if(this.age.innerHTML > 5 && this.age.innerHTML <=8){
             this.image2.style.display= "block"
             this.image1.style.display= "none"
             this.image3.style.display= "none"
-            //if tamagotchi is older than 6 change to third pic
+            //if tamagotchi is older than 9 change to third pic
         }else if(this.age.innerHTML > 9){
             this.image3.style.display = "block"
             this.image2.style.display = "none"

@@ -21,4 +21,3 @@ In this game, we were to:
 * Animate our pet across the screen while it's alive.
 >>>>>>> 7666d556baa5a4afd2328877b1c261579cfd7ed8
 
-
